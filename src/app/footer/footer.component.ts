@@ -8,8 +8,8 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
 
-  companyName: string = "Some Architect Company AS";
-  visitAddress: string = "Melkeveien 1, 5075 Bergen";
+  companyName = 'Some Architect Company AS';
+  visitAddress = 'Melkeveien 1, 5075 Bergen';
 
 
   constructor() { }
