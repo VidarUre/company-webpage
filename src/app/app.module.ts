@@ -10,6 +10,10 @@ import { ProjectsComponent } from './projects/projects.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { AboutEmployeeComponent } from './about-employee/about-employee.component';
+import { ContactEmployeeComponent } from './contact-employee/contact-employee.component';
+import { ContactFormComponent } from './contact-form/contact-form.component';
+import { ProjectBoxComponent } from './project-box/project-box.component';
 
 
 @NgModule({
@@ -20,7 +24,11 @@ import { FooterComponent } from './footer/footer.component';
     ProjectsComponent,
     ContactUsComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    AboutEmployeeComponent,
+    ContactEmployeeComponent,
+    ContactFormComponent,
+    ProjectBoxComponent
   ],
   imports: [
     BrowserModule,
