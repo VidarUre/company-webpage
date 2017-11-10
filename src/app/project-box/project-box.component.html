@@ -1,3 +1,14 @@
-<p>
-  project-box works!
-</p>
+
+<h2>(Big pictures here)</h2>
+
+<table *ngFor="let project of projectArray">
+  <tr>
+    <td><img src="{{ project.image }}" alt="{{ project.name }}Image" width="150" height="100"></td>
+    <td>{{ project.description }}</td>
+  </tr>
+  <tr>
+    <td><b>{{ project.name }}</b></td>
+  </tr>
+  <tr>
+  </tr>
+</table>

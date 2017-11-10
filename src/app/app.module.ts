@@ -15,6 +15,8 @@ import { ContactEmployeeComponent } from './contact-employee/contact-employee.co
 import { ContactFormComponent } from './contact-form/contact-form.component';
 import { ProjectBoxComponent } from './project-box/project-box.component';
 
+import { FormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -32,7 +34,8 @@ import { ProjectBoxComponent } from './project-box/project-box.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
