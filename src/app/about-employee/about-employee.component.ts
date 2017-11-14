@@ -1,4 +1,7 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { DataService } from '../data.service';
+import { ActivatedRoute } from '@angular/router';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-about-employee',
@@ -8,9 +11,14 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 })
 export class AboutEmployeeComponent implements OnInit {
 
-  constructor() { }
+  employeeArray: any;
+
+  constructor(private route: ActivatedRoute, private router: Router, private _data: DataService) {
+
+  }
 
   ngOnInit() {
+    this._data.employee.subscribe(res => this.employeeArray = res);
   }
 
 }

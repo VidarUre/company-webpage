@@ -16,6 +16,7 @@ import { ContactFormComponent } from './contact-form/contact-form.component';
 import { ProjectBoxComponent } from './project-box/project-box.component';
 
 import { FormsModule } from '@angular/forms';
+import { DataService } from './data.service';
 
 
 @NgModule({
@@ -37,7 +38,9 @@ import { FormsModule } from '@angular/forms';
     AppRoutingModule,
     FormsModule
   ],
-  providers: [],
+  providers: [
+    DataService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

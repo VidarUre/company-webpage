@@ -1,3 +1,11 @@
-<p>
-  about-employee works!
-</p>
+<table *ngFor="let employee of employeeArray">
+  <tr>
+    <td><img src="{{ employee.image }}" alt="{{ employee.name }}Image" width="150" height="100"></td>
+  </tr>
+  <tr>
+    <td>{{ employee.name }}</td>
+  </tr>
+  <tr>
+    <td>{{ employee.description }}</td>
+  </tr>
+</table>
