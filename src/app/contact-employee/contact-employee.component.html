@@ -12,7 +12,24 @@
 
 
 <h3>Or contact one of our wonderful employees:</h3>
-<!-- Make horisontal? -->
+
+<div class="row" *ngFor="let employee of employeeArray">
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <img class="img-md rounded-circle img-border mar-btm" src="{{ employee.image}}" alt="{{ employee.name }}Image" width="100" height="90">
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="card">
+      <p class="card-text text-center">
+          {{ employee.name }}
+      </p>
+    </div>
+  </div>
+</div>
+<!--
 <table *ngFor="let employee of employeeArray">
   <tr>
     <td><img src="{{ employee.image }}" alt="{{ employee.name }}Image" width="150" height="100"></td>
@@ -27,3 +44,4 @@
     <td>{{ employee.phone }}</td>
   </tr>
 </table>
+-->
